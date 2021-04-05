@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AQJ-a2-iFN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ky7-ee-oka">
+            <objects>
+                <viewController id="AQJ-a2-iFN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zKU-vM-ovj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyY-yC-gAt">
+                                <rect key="frame" x="167" y="94" width="80" height="28"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" name="ColorPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page is not implemented yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpz-7s-eka">
+                                <rect key="frame" x="99.5" y="137" width="215.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="ColorPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ix5-TX-VhZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rpz-7s-eka" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ix5-TX-VhZ" secondAttribute="leading" constant="10" id="9Gp-Jh-tAA"/>
+                            <constraint firstItem="KyY-yC-gAt" firstAttribute="centerX" secondItem="zKU-vM-ovj" secondAttribute="centerX" id="VEB-o3-2cj"/>
+                            <constraint firstItem="rpz-7s-eka" firstAttribute="centerX" secondItem="zKU-vM-ovj" secondAttribute="centerX" id="a6S-LR-USV"/>
+                            <constraint firstItem="KyY-yC-gAt" firstAttribute="top" secondItem="ix5-TX-VhZ" secondAttribute="top" constant="50" id="khC-8X-ta0"/>
+                            <constraint firstItem="rpz-7s-eka" firstAttribute="top" secondItem="KyY-yC-gAt" secondAttribute="bottom" constant="15" id="ydh-HQ-s9l"/>
+                            <constraint firstItem="ix5-TX-VhZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rpz-7s-eka" secondAttribute="trailing" constant="10" id="z92-IL-t0M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTq-lh-9ze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ColorPink">
+            <color red="0.72549019607843135" green="0.62745098039215685" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YZ2-KN-fNL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Light.ttf">
+            <string>Ubuntu-Light</string>
+        </array>
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--YogaVC-->
+        <scene sceneID="0jr-jZ-8Af">
+            <objects>
+                <viewController id="YZ2-KN-fNL" customClass="YogaVC" customModule="YogaExplore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ncp-LP-EmD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oqC-A2-mIB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="400" id="1rU-mD-40j" customClass="YogaTableCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="400"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1rU-mD-40j" id="Ops-5e-5eP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTt-ob-wXb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="358"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_top_Image" translatesAutoresizingMaskIntoConstraints="NO" id="p3A-yA-T1u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="358"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="p3A-yA-T1u" firstAttribute="top" secondItem="HTt-ob-wXb" secondAttribute="top" id="6vz-0i-ZdP"/>
+                                                        <constraint firstAttribute="bottom" secondItem="p3A-yA-T1u" secondAttribute="bottom" id="nwY-yM-9dj"/>
+                                                        <constraint firstItem="p3A-yA-T1u" firstAttribute="leading" secondItem="HTt-ob-wXb" secondAttribute="leading" id="rb5-25-Vvp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="p3A-yA-T1u" secondAttribute="trailing" id="sqI-qQ-b3w"/>
+                                                    </constraints>
+                                                </view>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ve-Cu-trr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="358"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMr-1F-cLO" customClass="BaseView" customModule="YogaExplore" customModuleProvider="target">
+                                                    <rect key="frame" x="69.5" y="326" width="275" height="55"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="7"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.69411764705882351" green="0.69803921568627447" blue="0.70196078431372544" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isViewRound" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0Q-aJ-qIP" customClass="HKRoundView" customModule="YogaExplore" customModuleProvider="target">
+                                                    <rect key="frame" x="69.5" y="326" width="275" height="55"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-EX-xe8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="275" height="55"/>
+                                                            <subviews>
+                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-H5-yq2">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="218" height="55"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5u-Dw-UOC" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                                            <rect key="frame" x="20" y="8" width="40.5" height="16.5"/>
+                                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                                            <color key="textColor" name="ColorLabel"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-f0-RWm" customClass="FloatRatingView" customModule="YogaExplore" customModuleProvider="target">
+                                                                            <rect key="frame" x="20" y="31.5" width="99" height="16.5"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="fi1-f0-RWm" secondAttribute="height" multiplier="6:1" id="qR1-sZ-buq"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="ic_review"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                                                                    <integer key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="ic_Star"/>
+                                                                                <userDefinedRuntimeAttribute type="size" keyPath="minImageSize">
+                                                                                    <size key="value" width="0.0" height="0.0"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3v-ei-6eG" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                                            <rect key="frame" x="126" y="31.5" width="19.5" height="16.5"/>
+                                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                                            <color key="textColor" name="ColorPink"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="fi1-f0-RWm" firstAttribute="top" secondItem="w5u-Dw-UOC" secondAttribute="bottom" constant="7" id="4x3-Tg-0me"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="fi1-f0-RWm" secondAttribute="bottom" constant="7" id="5Lb-dI-BwC"/>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w5u-Dw-UOC" secondAttribute="trailing" constant="10" id="76H-hh-ZxM"/>
+                                                                        <constraint firstItem="fi1-f0-RWm" firstAttribute="leading" secondItem="w5u-Dw-UOC" secondAttribute="leading" id="IWI-pm-lNZ"/>
+                                                                        <constraint firstItem="K3v-ei-6eG" firstAttribute="leading" secondItem="fi1-f0-RWm" secondAttribute="trailing" constant="7" id="Kn1-At-XkK"/>
+                                                                        <constraint firstItem="w5u-Dw-UOC" firstAttribute="leading" secondItem="dQc-H5-yq2" secondAttribute="leading" constant="20" id="ZbQ-lu-YBj"/>
+                                                                        <constraint firstItem="w5u-Dw-UOC" firstAttribute="top" secondItem="dQc-H5-yq2" secondAttribute="top" constant="8" id="jX7-1b-DK2"/>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="K3v-ei-6eG" secondAttribute="trailing" constant="10" id="lQy-L8-zYU"/>
+                                                                        <constraint firstItem="K3v-ei-6eG" firstAttribute="centerY" secondItem="fi1-f0-RWm" secondAttribute="centerY" id="q1b-9g-opW"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xO-nr-P1u">
+                                                                    <rect key="frame" x="218" y="0.0" width="2" height="55"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofC-f5-cvn">
+                                                                            <rect key="frame" x="0.0" y="10" width="2" height="35"/>
+                                                                            <color key="backgroundColor" red="0.72549019607843135" green="0.62745098039215685" blue="0.53725490196078429" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="ofC-f5-cvn" secondAttribute="bottom" constant="10" id="IOs-lw-eHu"/>
+                                                                        <constraint firstItem="ofC-f5-cvn" firstAttribute="leading" secondItem="1xO-nr-P1u" secondAttribute="leading" id="TEy-Wq-okl"/>
+                                                                        <constraint firstItem="ofC-f5-cvn" firstAttribute="top" secondItem="1xO-nr-P1u" secondAttribute="top" constant="10" id="mc0-Fp-nir"/>
+                                                                        <constraint firstAttribute="width" constant="2" id="yAX-Ga-oXH"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="ofC-f5-cvn" secondAttribute="trailing" id="znd-jp-fm7"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfq-RF-LV2">
+                                                                    <rect key="frame" x="220" y="0.0" width="55" height="55"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_rate" translatesAutoresizingMaskIntoConstraints="NO" id="uui-jT-o8v">
+                                                                            <rect key="frame" x="15.5" y="13.5" width="24" height="27.5"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="uui-jT-o8v" firstAttribute="height" secondItem="dfq-RF-LV2" secondAttribute="height" multiplier="0.5" id="11X-pT-x2X"/>
+                                                                        <constraint firstItem="uui-jT-o8v" firstAttribute="centerX" secondItem="dfq-RF-LV2" secondAttribute="centerX" id="1mA-ul-Psb"/>
+                                                                        <constraint firstItem="uui-jT-o8v" firstAttribute="centerY" secondItem="dfq-RF-LV2" secondAttribute="centerY" id="Wla-Ns-kAt"/>
+                                                                        <constraint firstItem="uui-jT-o8v" firstAttribute="width" secondItem="dfq-RF-LV2" secondAttribute="height" multiplier="3:7" id="nfR-Qv-gnW"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="dfq-RF-LV2" firstAttribute="leading" secondItem="1xO-nr-P1u" secondAttribute="trailing" id="57y-iq-MSO"/>
+                                                                <constraint firstAttribute="trailing" secondItem="dfq-RF-LV2" secondAttribute="trailing" id="jsa-a3-O7q"/>
+                                                                <constraint firstAttribute="bottom" secondItem="dfq-RF-LV2" secondAttribute="bottom" id="l3x-x4-fad"/>
+                                                                <constraint firstItem="dfq-RF-LV2" firstAttribute="top" secondItem="MP8-EX-xe8" secondAttribute="top" id="oiB-Vu-J8h"/>
+                                                                <constraint firstItem="dfq-RF-LV2" firstAttribute="width" secondItem="MP8-EX-xe8" secondAttribute="width" multiplier="0.2" id="sJY-7d-lDO"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="MP8-EX-xe8" firstAttribute="top" secondItem="D0Q-aJ-qIP" secondAttribute="top" id="2Wy-x9-uzS"/>
+                                                        <constraint firstAttribute="height" constant="55" id="5l8-U9-fYa"/>
+                                                        <constraint firstItem="MP8-EX-xe8" firstAttribute="leading" secondItem="D0Q-aJ-qIP" secondAttribute="leading" id="MLO-eD-ENd"/>
+                                                        <constraint firstAttribute="bottom" secondItem="MP8-EX-xe8" secondAttribute="bottom" id="OP1-K6-HPY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MP8-EX-xe8" secondAttribute="trailing" id="a5c-Qg-1An"/>
+                                                        <constraint firstAttribute="width" secondItem="D0Q-aJ-qIP" secondAttribute="height" multiplier="5" id="yNI-jV-c7t"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRatioAppliedOnSize" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wep-Cn-rd8" customClass="HKWidthButton" customModule="YogaExplore" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="45" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="wep-Cn-rd8" secondAttribute="height" multiplier="1:1" id="RAp-EN-j8F"/>
+                                                        <constraint firstAttribute="width" constant="50" id="cBD-2n-LXo"/>
+                                                    </constraints>
+                                                    <state key="normal" image="ic_back"/>
+                                                    <connections>
+                                                        <action selector="btnBackClick:" destination="YZ2-KN-fNL" eventType="touchUpInside" id="TS9-L9-hC5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FMr-1F-cLO" firstAttribute="trailing" secondItem="D0Q-aJ-qIP" secondAttribute="trailing" id="1JQ-1X-7GP"/>
+                                                <constraint firstItem="HTt-ob-wXb" firstAttribute="bottom" secondItem="D0Q-aJ-qIP" secondAttribute="bottom" multiplier="0.94" id="307-tO-pB2"/>
+                                                <constraint firstItem="HTt-ob-wXb" firstAttribute="leading" secondItem="Ops-5e-5eP" secondAttribute="leading" id="43A-KF-LJl"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Ve-Cu-trr" secondAttribute="trailing" id="87x-Er-kXW"/>
+                                                <constraint firstItem="wep-Cn-rd8" firstAttribute="top" secondItem="5Ve-Cu-trr" secondAttribute="top" constant="45" id="KuS-QJ-K4U"/>
+                                                <constraint firstItem="D0Q-aJ-qIP" firstAttribute="centerX" secondItem="Ops-5e-5eP" secondAttribute="centerX" id="Pv9-8Y-5Il"/>
+                                                <constraint firstItem="5Ve-Cu-trr" firstAttribute="bottom" secondItem="HTt-ob-wXb" secondAttribute="bottom" id="YVe-sb-PT9"/>
+                                                <constraint firstAttribute="bottom" secondItem="D0Q-aJ-qIP" secondAttribute="bottom" multiplier="1.05" id="eAK-LV-2gX"/>
+                                                <constraint firstItem="FMr-1F-cLO" firstAttribute="leading" secondItem="D0Q-aJ-qIP" secondAttribute="leading" id="eIP-kj-rA6"/>
+                                                <constraint firstItem="wep-Cn-rd8" firstAttribute="leading" secondItem="Ops-5e-5eP" secondAttribute="leading" id="iU0-CE-XFI"/>
+                                                <constraint firstAttribute="trailing" secondItem="HTt-ob-wXb" secondAttribute="trailing" id="lML-h6-qer"/>
+                                                <constraint firstItem="FMr-1F-cLO" firstAttribute="top" secondItem="D0Q-aJ-qIP" secondAttribute="top" id="oyD-qo-05H"/>
+                                                <constraint firstItem="FMr-1F-cLO" firstAttribute="bottom" secondItem="D0Q-aJ-qIP" secondAttribute="bottom" id="pKu-se-w5R"/>
+                                                <constraint firstItem="HTt-ob-wXb" firstAttribute="top" secondItem="Ops-5e-5eP" secondAttribute="top" id="tTV-cC-wTo"/>
+                                                <constraint firstItem="5Ve-Cu-trr" firstAttribute="leading" secondItem="Ops-5e-5eP" secondAttribute="leading" id="wRL-6a-fwg"/>
+                                                <constraint firstItem="5Ve-Cu-trr" firstAttribute="top" secondItem="Ops-5e-5eP" secondAttribute="top" id="yGn-K5-ssT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="headerView" destination="HTt-ob-wXb" id="GjB-IT-AKq"/>
+                                            <outlet property="reviewView" destination="D0Q-aJ-qIP" id="ZsQ-h3-Is0"/>
+                                            <outlet property="widthStarView" destination="yNI-jV-c7t" id="qnM-yd-mIF"/>
+                                            <outlet property="yogaGradientView" destination="5Ve-Cu-trr" id="Ltd-1l-iEu"/>
+                                            <outletCollection property="horizontalConstraints" destination="KuS-QJ-K4U" collectionClass="NSMutableArray" id="3J0-JM-RAm"/>
+                                            <outletCollection property="horizontalConstraints" destination="cBD-2n-LXo" collectionClass="NSMutableArray" id="nhv-Hr-RCY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="100" id="NYW-Gg-3gn" customClass="YogaTableCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="428" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NYW-Gg-3gn" id="sQK-ge-ykW">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ope-fy-Uia">
+                                                    <rect key="frame" x="10" y="0.0" width="394" height="100"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Efficitur Resort Yoga centre" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qlr-sq-WWz" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                            <rect key="frame" x="5" y="8" width="219.5" height="21"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                                                            <color key="textColor" name="ColorLabel"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_pin" translatesAutoresizingMaskIntoConstraints="NO" id="sgI-vQ-zUW">
+                                                            <rect key="frame" x="5" y="37" width="15" height="15"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="15" id="bP5-Hg-Nry"/>
+                                                                <constraint firstAttribute="width" secondItem="sgI-vQ-zUW" secondAttribute="height" multiplier="1:1" id="tt5-2V-pl3"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="755 Brickyard St., Lake Zurich, IL 60047" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-7N-qmn" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                            <rect key="frame" x="25" y="36" width="251.5" height="16.5"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="14"/>
+                                                            <color key="textColor" red="0.71764705882352942" green="0.68627450980392157" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa0-tD-Ozf">
+                                                            <rect key="frame" x="153.5" y="69" width="87" height="31"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="16"/>
+                                                            <state key="normal" title="See on map">
+                                                                <color key="titleColor" name="ColorPink"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Aa0-tD-Ozf" firstAttribute="centerX" secondItem="Ope-fy-Uia" secondAttribute="centerX" id="0Xl-gk-fx1"/>
+                                                        <constraint firstItem="hrg-7N-qmn" firstAttribute="leading" secondItem="sgI-vQ-zUW" secondAttribute="trailing" constant="5" id="2Hc-1b-MFV"/>
+                                                        <constraint firstItem="sgI-vQ-zUW" firstAttribute="leading" secondItem="Ope-fy-Uia" secondAttribute="leading" constant="5" id="2VO-Kf-PSO"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Aa0-tD-Ozf" secondAttribute="bottom" id="3Ln-EZ-v6S"/>
+                                                        <constraint firstItem="Qlr-sq-WWz" firstAttribute="top" secondItem="Ope-fy-Uia" secondAttribute="top" constant="8" id="6Td-MP-pdy"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hrg-7N-qmn" secondAttribute="bottom" constant="40" id="CY0-Gk-bnz"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qlr-sq-WWz" secondAttribute="trailing" constant="10" id="O8h-qj-n7q"/>
+                                                        <constraint firstItem="Qlr-sq-WWz" firstAttribute="leading" secondItem="Ope-fy-Uia" secondAttribute="leading" constant="5" id="PCl-GN-TT2"/>
+                                                        <constraint firstItem="sgI-vQ-zUW" firstAttribute="centerY" secondItem="hrg-7N-qmn" secondAttribute="centerY" id="fFy-Ta-SKl"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hrg-7N-qmn" secondAttribute="trailing" constant="10" id="g4w-Tx-16O"/>
+                                                        <constraint firstItem="hrg-7N-qmn" firstAttribute="top" secondItem="Qlr-sq-WWz" secondAttribute="bottom" constant="7" id="rSs-KA-S7m"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Ope-fy-Uia" secondAttribute="bottom" id="HsF-nN-sYO"/>
+                                                <constraint firstItem="Ope-fy-Uia" firstAttribute="top" secondItem="sQK-ge-ykW" secondAttribute="top" id="kTP-vg-67Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ope-fy-Uia" secondAttribute="trailing" constant="10" id="pST-dZ-cNe"/>
+                                                <constraint firstItem="Ope-fy-Uia" firstAttribute="leading" secondItem="sQK-ge-ykW" secondAttribute="leading" constant="10" id="u6V-yE-Rf4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="timingCell" rowHeight="100" id="DaM-wW-pKn" customClass="YogaTableCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="528" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DaM-wW-pKn" id="zZw-id-EY1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-3J-Z3V">
+                                                    <rect key="frame" x="10" y="0.0" width="394" height="60"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bqm-GX-aaX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CL2-FC-0bO">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="197" height="60"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekdays" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6A-wz-MgT" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                                            <rect key="frame" x="5" y="8" width="64.5" height="16.5"/>
+                                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                                            <color key="textColor" name="ColorLabel"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09.00 - 18.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeC-ZZ-dai" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                                            <rect key="frame" x="5" y="29.5" width="83.5" height="16.5"/>
+                                                                            <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="14"/>
+                                                                            <color key="textColor" name="ColorLabel"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CeC-ZZ-dai" secondAttribute="trailing" constant="10" id="0Qg-ET-2v9"/>
+                                                                        <constraint firstItem="b6A-wz-MgT" firstAttribute="top" secondItem="CL2-FC-0bO" secondAttribute="top" constant="8" id="6zg-QP-c7i"/>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6A-wz-MgT" secondAttribute="trailing" constant="10" id="9Aq-LU-NuS"/>
+                                                                        <constraint firstItem="b6A-wz-MgT" firstAttribute="leading" secondItem="CL2-FC-0bO" secondAttribute="leading" constant="5" id="fdL-nK-ZPB"/>
+                                                                        <constraint firstItem="CeC-ZZ-dai" firstAttribute="leading" secondItem="b6A-wz-MgT" secondAttribute="leading" id="g5a-RG-hpk"/>
+                                                                        <constraint firstItem="CeC-ZZ-dai" firstAttribute="top" secondItem="b6A-wz-MgT" secondAttribute="bottom" constant="5" id="qRw-sF-ttS"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVu-D2-osn">
+                                                                    <rect key="frame" x="197" y="0.0" width="197" height="60"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfB-9n-Ait" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                                            <rect key="frame" x="108.5" y="8" width="58.5" height="16.5"/>
+                                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                                            <color key="textColor" name="ColorLabel"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08.30 - 17.30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01F-DA-PY2" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                                            <rect key="frame" x="108.5" y="29.5" width="83.5" height="16.5"/>
+                                                                            <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="14"/>
+                                                                            <color key="textColor" name="ColorLabel"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="bfB-9n-Ait" firstAttribute="top" secondItem="JVu-D2-osn" secondAttribute="top" constant="8" id="GJy-qb-nzL"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="01F-DA-PY2" secondAttribute="trailing" constant="5" id="IcW-Q9-tUJ"/>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bfB-9n-Ait" secondAttribute="trailing" constant="10" id="RNE-aS-Rb0"/>
+                                                                        <constraint firstItem="01F-DA-PY2" firstAttribute="leading" secondItem="bfB-9n-Ait" secondAttribute="leading" id="flJ-u5-Rup"/>
+                                                                        <constraint firstItem="01F-DA-PY2" firstAttribute="top" secondItem="bfB-9n-Ait" secondAttribute="bottom" constant="5" id="wqo-w2-vyt"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Bqm-GX-aaX" firstAttribute="leading" secondItem="xd4-3J-Z3V" secondAttribute="leading" id="1OU-aP-Ovm"/>
+                                                        <constraint firstItem="Bqm-GX-aaX" firstAttribute="top" secondItem="xd4-3J-Z3V" secondAttribute="top" id="75n-sc-fhH"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Bqm-GX-aaX" secondAttribute="bottom" id="hIh-Zf-ANH"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Bqm-GX-aaX" secondAttribute="trailing" id="qm5-X2-FOW"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQn-G2-lnf">
+                                                    <rect key="frame" x="10" y="60" width="394" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUX-PH-kaR" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                            <rect key="frame" x="5" y="7" width="78.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="17"/>
+                                                            <color key="textColor" red="0.55294117647058827" green="0.47058823529411764" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sN-AV-dmB">
+                                                            <rect key="frame" x="5" y="34" width="384" height="1"/>
+                                                            <color key="backgroundColor" red="0.69411764705882351" green="0.69803921568627447" blue="0.70196078431372544" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="L8U-io-RhX"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="ColorLabel"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="aUX-PH-kaR" firstAttribute="top" secondItem="gQn-G2-lnf" secondAttribute="top" constant="7" id="9Qr-i0-URe"/>
+                                                        <constraint firstItem="aUX-PH-kaR" firstAttribute="leading" secondItem="gQn-G2-lnf" secondAttribute="leading" constant="5" id="EMb-na-EiW"/>
+                                                        <constraint firstItem="4sN-AV-dmB" firstAttribute="leading" secondItem="aUX-PH-kaR" secondAttribute="leading" id="FTx-xO-dpa"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aUX-PH-kaR" secondAttribute="trailing" constant="10" id="V4H-7k-emw"/>
+                                                        <constraint firstAttribute="bottom" secondItem="4sN-AV-dmB" secondAttribute="bottom" constant="5" id="iiQ-q1-C5i"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4sN-AV-dmB" secondAttribute="trailing" constant="5" id="twc-fw-6Fq"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xd4-3J-Z3V" firstAttribute="top" secondItem="zZw-id-EY1" secondAttribute="top" id="0dk-vc-Y68"/>
+                                                <constraint firstAttribute="bottom" secondItem="gQn-G2-lnf" secondAttribute="bottom" id="2ka-OX-Dlf"/>
+                                                <constraint firstItem="xd4-3J-Z3V" firstAttribute="height" secondItem="zZw-id-EY1" secondAttribute="height" multiplier="0.6" id="Gom-xf-QwB"/>
+                                                <constraint firstAttribute="trailing" secondItem="xd4-3J-Z3V" secondAttribute="trailing" constant="10" id="cKD-M0-LPa"/>
+                                                <constraint firstItem="xd4-3J-Z3V" firstAttribute="leading" secondItem="zZw-id-EY1" secondAttribute="leading" constant="10" id="d8q-Jk-Aja"/>
+                                                <constraint firstItem="gQn-G2-lnf" firstAttribute="leading" secondItem="xd4-3J-Z3V" secondAttribute="leading" id="rBq-OE-M2C"/>
+                                                <constraint firstItem="gQn-G2-lnf" firstAttribute="trailing" secondItem="xd4-3J-Z3V" secondAttribute="trailing" id="stF-n5-kxN"/>
+                                                <constraint firstItem="gQn-G2-lnf" firstAttribute="width" secondItem="xd4-3J-Z3V" secondAttribute="width" id="sv1-Lq-mF6"/>
+                                                <constraint firstItem="gQn-G2-lnf" firstAttribute="top" secondItem="xd4-3J-Z3V" secondAttribute="bottom" id="wic-dy-U1G"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descCell" rowHeight="140" id="2qL-Ji-iKv" customClass="YogaTableCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="628" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2qL-Ji-iKv" id="OGf-Dg-HNR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXI-lV-VAQ">
+                                                    <rect key="frame" x="10" y="0.0" width="394" height="140"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBg-0L-cXd" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                            <rect key="frame" x="5" y="10" width="76.5" height="17.5"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                            <color key="textColor" name="ColorLabel"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcr-nX-Zw3" customClass="HKWidthLabel" customModule="YogaExplore" customModuleProvider="target">
+                                                            <rect key="frame" x="5" y="34.5" width="354.5" height="49"/>
+                                                            <string key="text">Integer ac interdum lacus. Nunc porta semper lacus a varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</string>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="14"/>
+                                                            <color key="textColor" name="ColorLabel"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOe-4O-lmK">
+                                                            <rect key="frame" x="39.5" y="95.5" width="315" height="1"/>
+                                                            <color key="backgroundColor" red="0.69411764710000001" green="0.69803921570000005" blue="0.70196078429999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="EBg-6U-a2t"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="ColorLabel"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qcr-nX-Zw3" firstAttribute="top" secondItem="GBg-0L-cXd" secondAttribute="bottom" constant="7" id="HxL-2Z-jbp"/>
+                                                        <constraint firstItem="UOe-4O-lmK" firstAttribute="width" secondItem="AXI-lV-VAQ" secondAttribute="width" multiplier="0.8" id="PKa-Ot-wIb"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qcr-nX-Zw3" secondAttribute="bottom" constant="20" id="R9K-vB-gwe"/>
+                                                        <constraint firstItem="GBg-0L-cXd" firstAttribute="leading" secondItem="AXI-lV-VAQ" secondAttribute="leading" constant="5" id="cQx-K0-9I2"/>
+                                                        <constraint firstItem="UOe-4O-lmK" firstAttribute="centerX" secondItem="AXI-lV-VAQ" secondAttribute="centerX" id="fea-NP-CyQ"/>
+                                                        <constraint firstItem="qcr-nX-Zw3" firstAttribute="leading" secondItem="GBg-0L-cXd" secondAttribute="leading" id="hUQ-Cw-wkZ"/>
+                                                        <constraint firstItem="GBg-0L-cXd" firstAttribute="top" secondItem="AXI-lV-VAQ" secondAttribute="top" constant="10" id="kGo-aG-bAP"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GBg-0L-cXd" secondAttribute="trailing" constant="10" id="ptg-6G-QIz"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qcr-nX-Zw3" secondAttribute="trailing" constant="10" id="sX5-HZ-cDT"/>
+                                                        <constraint firstItem="UOe-4O-lmK" firstAttribute="top" secondItem="qcr-nX-Zw3" secondAttribute="bottom" constant="12" id="wZb-ng-Via"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AXI-lV-VAQ" firstAttribute="leading" secondItem="OGf-Dg-HNR" secondAttribute="leading" constant="10" id="05M-Fc-xtg"/>
+                                                <constraint firstAttribute="bottom" secondItem="AXI-lV-VAQ" secondAttribute="bottom" id="5NY-Te-a58"/>
+                                                <constraint firstAttribute="trailing" secondItem="AXI-lV-VAQ" secondAttribute="trailing" constant="10" id="8cW-6r-i5l"/>
+                                                <constraint firstItem="AXI-lV-VAQ" firstAttribute="top" secondItem="OGf-Dg-HNR" secondAttribute="top" id="T5F-ma-gYf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reviewCell" rowHeight="60" id="CY7-LC-KHL" customClass="YogaTableCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="768" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CY7-LC-KHL" id="9Ct-lY-Fl1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fi2-TW-jWz" customClass="HKWidthButton" customModule="YogaExplore" customModuleProvider="target">
+                                                    <rect key="frame" x="117" y="0.0" width="180" height="60"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                                                    <state key="normal" title="  Reviews" image="ic_editReview">
+                                                        <color key="titleColor" name="ColorPink"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Fi2-TW-jWz" firstAttribute="centerX" secondItem="9Ct-lY-Fl1" secondAttribute="centerX" id="ZA4-Mq-rGx"/>
+                                                <constraint firstItem="Fi2-TW-jWz" firstAttribute="width" secondItem="9Ct-lY-Fl1" secondAttribute="height" multiplier="3:1" id="awx-vt-Zzj"/>
+                                                <constraint firstItem="Fi2-TW-jWz" firstAttribute="height" secondItem="9Ct-lY-Fl1" secondAttribute="height" id="j8X-gz-FID"/>
+                                                <constraint firstItem="Fi2-TW-jWz" firstAttribute="centerY" secondItem="9Ct-lY-Fl1" secondAttribute="centerY" id="tfn-tg-j34"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YZ2-KN-fNL" id="NTY-xJ-I8h"/>
+                                    <outlet property="delegate" destination="YZ2-KN-fNL" id="FIf-Za-jYU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cVi-UZ-JU8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oqC-A2-mIB" firstAttribute="trailing" secondItem="ncp-LP-EmD" secondAttribute="trailing" id="bn2-V0-Yfo"/>
+                            <constraint firstItem="oqC-A2-mIB" firstAttribute="bottom" secondItem="ncp-LP-EmD" secondAttribute="bottom" id="cYz-f7-2cW"/>
+                            <constraint firstItem="oqC-A2-mIB" firstAttribute="leading" secondItem="ncp-LP-EmD" secondAttribute="leading" id="dkX-PS-Dvo"/>
+                            <constraint firstItem="oqC-A2-mIB" firstAttribute="top" secondItem="ncp-LP-EmD" secondAttribute="top" id="zYe-31-ZGb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="yogaTablView" destination="oqC-A2-mIB" id="Vnm-Pd-q2k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pd2-Xo-eZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90.400000000000006" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_Star" width="30" height="30"/>
+        <image name="ic_back" width="25" height="25"/>
+        <image name="ic_editReview" width="33" height="33"/>
+        <image name="ic_pin" width="33" height="33"/>
+        <image name="ic_rate" width="33" height="33"/>
+        <image name="ic_review" width="33" height="33"/>
+        <image name="ic_top_Image" width="2240" height="1493"/>
+        <namedColor name="ColorLabel">
+            <color red="0.29411764705882354" green="0.28627450980392155" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorPink">
+            <color red="0.72549019607843135" green="0.62745098039215685" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

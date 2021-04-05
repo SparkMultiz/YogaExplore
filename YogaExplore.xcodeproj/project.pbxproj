@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		246196522526E9C7006ADE0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196512526E9C7006ADE0F /* AppDelegate.swift */; };
+		246196592526E9C7006ADE0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246196572526E9C7006ADE0F /* Main.storyboard */; };
+		2461965C2526E9C7006ADE0F /* YogaExplore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2461965A2526E9C7006ADE0F /* YogaExplore.xcdatamodeld */; };
+		2461965E2526E9C9006ADE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2461965D2526E9C9006ADE0F /* Assets.xcassets */; };
+		246196612526E9C9006ADE0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2461965F2526E9C9006ADE0F /* LaunchScreen.storyboard */; };
+		246196852526EC97006ADE0F /* Yoga.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246196832526EC97006ADE0F /* Yoga.storyboard */; };
+		246196892526ECA6006ADE0F /* Chats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246196872526ECA6006ADE0F /* Chats.storyboard */; };
+		2461968D2526ECB8006ADE0F /* Articles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2461968B2526ECB8006ADE0F /* Articles.storyboard */; };
+		246196912526ECCB006ADE0F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2461968F2526ECCB006ADE0F /* Settings.storyboard */; };
+		2461969E2526EDE4006ADE0F /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 246196952526EDE3006ADE0F /* Ubuntu-Bold.ttf */; };
+		2461969F2526EDE4006ADE0F /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 246196962526EDE3006ADE0F /* Ubuntu-BoldItalic.ttf */; };
+		246196A02526EDE4006ADE0F /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 246196972526EDE3006ADE0F /* Ubuntu-Light.ttf */; };
+		246196A12526EDE4006ADE0F /* UFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 246196982526EDE3006ADE0F /* UFL.txt */; };
+		246196A22526EDE4006ADE0F /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 246196992526EDE4006ADE0F /* Ubuntu-LightItalic.ttf */; };
+		246196A32526EDE4006ADE0F /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2461969A2526EDE4006ADE0F /* Ubuntu-Medium.ttf */; };
+		246196A42526EDE4006ADE0F /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2461969B2526EDE4006ADE0F /* Ubuntu-Italic.ttf */; };
+		246196A52526EDE4006ADE0F /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2461969C2526EDE4006ADE0F /* Ubuntu-MediumItalic.ttf */; };
+		246196A62526EDE4006ADE0F /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2461969D2526EDE4006ADE0F /* Ubuntu-Regular.ttf */; };
+		246196AA2526EEA5006ADE0F /* EntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196A92526EEA5006ADE0F /* EntryVC.swift */; };
+		246196B42526EF2B006ADE0F /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246196B32526EF2B006ADE0F /* TabBarView.xib */; };
+		246196B72526EF3B006ADE0F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196B62526EF3B006ADE0F /* TabBarView.swift */; };
+		246196BB2526F1FC006ADE0F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196BA2526F1FC006ADE0F /* UIViewExtension.swift */; };
+		246196BE2526FE80006ADE0F /* RatioExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196BD2526FE80006ADE0F /* RatioExtension.swift */; };
+		246196C225270113006ADE0F /* ConstrainedSubClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196C125270113006ADE0F /* ConstrainedSubClasses.swift */; };
+		246196C6252701EC006ADE0F /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196C5252701EC006ADE0F /* UIFontExtension.swift */; };
+		246196C9252703F1006ADE0F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196C8252703F1006ADE0F /* TabBarController.swift */; };
+		246196CD25272C2D006ADE0F /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196CC25272C2D006ADE0F /* CustomClasses.swift */; };
+		246196D225276042006ADE0F /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196D125276042006ADE0F /* FloatRatingView.swift */; };
+		246196D625276661006ADE0F /* YogaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196D525276661006ADE0F /* YogaVC.swift */; };
+		246196DA2527669A006ADE0F /* YogaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246196D92527669A006ADE0F /* YogaTableCell.swift */; };
+		2466D06D252B3DB400C9A304 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2466D06C252B3DB400C9A304 /* Constant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2461964E2526E9C7006ADE0F /* YogaExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		246196512526E9C7006ADE0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		246196582526E9C7006ADE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2461965B2526E9C7006ADE0F /* YogaExplore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YogaExplore.xcdatamodel; sourceTree = "<group>"; };
+		2461965D2526E9C9006ADE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		246196602526E9C9006ADE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		246196622526E9C9006ADE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246196842526EC97006ADE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Yoga.storyboard; sourceTree = "<group>"; };
+		246196882526ECA6006ADE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chats.storyboard; sourceTree = "<group>"; };
+		2461968C2526ECB8006ADE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Articles.storyboard; sourceTree = "<group>"; };
+		246196902526ECCB006ADE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		246196952526EDE3006ADE0F /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		246196962526EDE3006ADE0F /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		246196972526EDE3006ADE0F /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		246196982526EDE3006ADE0F /* UFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UFL.txt; sourceTree = "<group>"; };
+		246196992526EDE4006ADE0F /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		2461969A2526EDE4006ADE0F /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		2461969B2526EDE4006ADE0F /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		2461969C2526EDE4006ADE0F /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		2461969D2526EDE4006ADE0F /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		246196A92526EEA5006ADE0F /* EntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryVC.swift; sourceTree = "<group>"; };
+		246196B32526EF2B006ADE0F /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
+		246196B62526EF3B006ADE0F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		246196BA2526F1FC006ADE0F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		246196BD2526FE80006ADE0F /* RatioExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioExtension.swift; sourceTree = "<group>"; };
+		246196C125270113006ADE0F /* ConstrainedSubClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainedSubClasses.swift; sourceTree = "<group>"; };
+		246196C5252701EC006ADE0F /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		246196C8252703F1006ADE0F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		246196CC25272C2D006ADE0F /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
+		246196D125276042006ADE0F /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
+		246196D525276661006ADE0F /* YogaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaVC.swift; sourceTree = "<group>"; };
+		246196D92527669A006ADE0F /* YogaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaTableCell.swift; sourceTree = "<group>"; };
+		2466D06C252B3DB400C9A304 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2461964B2526E9C7006ADE0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		246196452526E9C7006ADE0F = {
+			isa = PBXGroup;
+			children = (
+				246196502526E9C7006ADE0F /* YogaExplore */,
+				2461964F2526E9C7006ADE0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2461964F2526E9C7006ADE0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2461964E2526E9C7006ADE0F /* YogaExplore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		246196502526E9C7006ADE0F /* YogaExplore */ = {
+			isa = PBXGroup;
+			children = (
+				246196762526EBBE006ADE0F /* XIB */,
+				246196772526EBC3006ADE0F /* Storyboard */,
+				246196782526EBCB006ADE0F /* ViewController */,
+				246196792526EBD5006ADE0F /* Utils */,
+				2461967A2526EBDB006ADE0F /* Resources */,
+				2461967B2526EBE4006ADE0F /* SupportingFiles */,
+			);
+			path = YogaExplore;
+			sourceTree = "<group>";
+		};
+		246196762526EBBE006ADE0F /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				246196B22526EF20006ADE0F /* TabBar */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		246196772526EBC3006ADE0F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2461965F2526E9C9006ADE0F /* LaunchScreen.storyboard */,
+				246196572526E9C7006ADE0F /* Main.storyboard */,
+				246196832526EC97006ADE0F /* Yoga.storyboard */,
+				246196872526ECA6006ADE0F /* Chats.storyboard */,
+				2461968B2526ECB8006ADE0F /* Articles.storyboard */,
+				2461968F2526ECCB006ADE0F /* Settings.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		246196782526EBCB006ADE0F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				246196D425276651006ADE0F /* Yoga */,
+				246196A82526EE87006ADE0F /* Entry */,
+				2461967E2526EC13006ADE0F /* Parent */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		246196792526EBD5006ADE0F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				246196D025276042006ADE0F /* FloatingView */,
+				246196C0252700F0006ADE0F /* UIClasses */,
+				246196B92526F1DF006ADE0F /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2461967A2526EBDB006ADE0F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				246196932526EDCB006ADE0F /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2461967B2526EBE4006ADE0F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2461965D2526E9C9006ADE0F /* Assets.xcassets */,
+				246196622526E9C9006ADE0F /* Info.plist */,
+				2461965A2526E9C7006ADE0F /* YogaExplore.xcdatamodeld */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2461967E2526EC13006ADE0F /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				246196512526E9C7006ADE0F /* AppDelegate.swift */,
+				246196C8252703F1006ADE0F /* TabBarController.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		246196932526EDCB006ADE0F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				246196942526EDD3006ADE0F /* Ubuntu */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		246196942526EDD3006ADE0F /* Ubuntu */ = {
+			isa = PBXGroup;
+			children = (
+				246196952526EDE3006ADE0F /* Ubuntu-Bold.ttf */,
+				246196962526EDE3006ADE0F /* Ubuntu-BoldItalic.ttf */,
+				2461969B2526EDE4006ADE0F /* Ubuntu-Italic.ttf */,
+				246196972526EDE3006ADE0F /* Ubuntu-Light.ttf */,
+				246196992526EDE4006ADE0F /* Ubuntu-LightItalic.ttf */,
+				2461969A2526EDE4006ADE0F /* Ubuntu-Medium.ttf */,
+				2461969C2526EDE4006ADE0F /* Ubuntu-MediumItalic.ttf */,
+				2461969D2526EDE4006ADE0F /* Ubuntu-Regular.ttf */,
+				246196982526EDE3006ADE0F /* UFL.txt */,
+			);
+			path = Ubuntu;
+			sourceTree = "<group>";
+		};
+		246196A82526EE87006ADE0F /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				246196A92526EEA5006ADE0F /* EntryVC.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		246196B22526EF20006ADE0F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				246196B32526EF2B006ADE0F /* TabBarView.xib */,
+				246196B62526EF3B006ADE0F /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		246196B92526F1DF006ADE0F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				246196BA2526F1FC006ADE0F /* UIViewExtension.swift */,
+				246196BD2526FE80006ADE0F /* RatioExtension.swift */,
+				246196C5252701EC006ADE0F /* UIFontExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		246196C0252700F0006ADE0F /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				246196C125270113006ADE0F /* ConstrainedSubClasses.swift */,
+				246196CC25272C2D006ADE0F /* CustomClasses.swift */,
+				2466D06C252B3DB400C9A304 /* Constant.swift */,
+			);
+			path = UIClasses;
+			sourceTree = "<group>";
+		};
+		246196D025276042006ADE0F /* FloatingView */ = {
+			isa = PBXGroup;
+			children = (
+				246196D125276042006ADE0F /* FloatRatingView.swift */,
+			);
+			path = FloatingView;
+			sourceTree = "<group>";
+		};
+		246196D425276651006ADE0F /* Yoga */ = {
+			isa = PBXGroup;
+			children = (
+				246196D525276661006ADE0F /* YogaVC.swift */,
+				246196D92527669A006ADE0F /* YogaTableCell.swift */,
+			);
+			path = Yoga;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2461964D2526E9C7006ADE0F /* YogaExplore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246196652526E9C9006ADE0F /* Build configuration list for PBXNativeTarget "YogaExplore" */;
+			buildPhases = (
+				2461964A2526E9C7006ADE0F /* Sources */,
+				2461964B2526E9C7006ADE0F /* Frameworks */,
+				2461964C2526E9C7006ADE0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YogaExplore;
+			productName = YogaExplore;
+			productReference = 2461964E2526E9C7006ADE0F /* YogaExplore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		246196462526E9C7006ADE0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2461964D2526E9C7006ADE0F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 246196492526E9C7006ADE0F /* Build configuration list for PBXProject "YogaExplore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 246196452526E9C7006ADE0F;
+			productRefGroup = 2461964F2526E9C7006ADE0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2461964D2526E9C7006ADE0F /* YogaExplore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2461964C2526E9C7006ADE0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246196A62526EDE4006ADE0F /* Ubuntu-Regular.ttf in Resources */,
+				246196612526E9C9006ADE0F /* LaunchScreen.storyboard in Resources */,
+				2461965E2526E9C9006ADE0F /* Assets.xcassets in Resources */,
+				246196B42526EF2B006ADE0F /* TabBarView.xib in Resources */,
+				246196A52526EDE4006ADE0F /* Ubuntu-MediumItalic.ttf in Resources */,
+				246196A02526EDE4006ADE0F /* Ubuntu-Light.ttf in Resources */,
+				246196A42526EDE4006ADE0F /* Ubuntu-Italic.ttf in Resources */,
+				2461969F2526EDE4006ADE0F /* Ubuntu-BoldItalic.ttf in Resources */,
+				246196A22526EDE4006ADE0F /* Ubuntu-LightItalic.ttf in Resources */,
+				246196892526ECA6006ADE0F /* Chats.storyboard in Resources */,
+				246196852526EC97006ADE0F /* Yoga.storyboard in Resources */,
+				246196A12526EDE4006ADE0F /* UFL.txt in Resources */,
+				2461969E2526EDE4006ADE0F /* Ubuntu-Bold.ttf in Resources */,
+				246196592526E9C7006ADE0F /* Main.storyboard in Resources */,
+				2461968D2526ECB8006ADE0F /* Articles.storyboard in Resources */,
+				246196A32526EDE4006ADE0F /* Ubuntu-Medium.ttf in Resources */,
+				246196912526ECCB006ADE0F /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2461964A2526E9C7006ADE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246196C225270113006ADE0F /* ConstrainedSubClasses.swift in Sources */,
+				246196C6252701EC006ADE0F /* UIFontExtension.swift in Sources */,
+				246196BB2526F1FC006ADE0F /* UIViewExtension.swift in Sources */,
+				246196C9252703F1006ADE0F /* TabBarController.swift in Sources */,
+				246196BE2526FE80006ADE0F /* RatioExtension.swift in Sources */,
+				246196522526E9C7006ADE0F /* AppDelegate.swift in Sources */,
+				246196CD25272C2D006ADE0F /* CustomClasses.swift in Sources */,
+				2466D06D252B3DB400C9A304 /* Constant.swift in Sources */,
+				246196D225276042006ADE0F /* FloatRatingView.swift in Sources */,
+				246196D625276661006ADE0F /* YogaVC.swift in Sources */,
+				2461965C2526E9C7006ADE0F /* YogaExplore.xcdatamodeld in Sources */,
+				246196B72526EF3B006ADE0F /* TabBarView.swift in Sources */,
+				246196AA2526EEA5006ADE0F /* EntryVC.swift in Sources */,
+				246196DA2527669A006ADE0F /* YogaTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		246196572526E9C7006ADE0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246196582526E9C7006ADE0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2461965F2526E9C9006ADE0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246196602526E9C9006ADE0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		246196832526EC97006ADE0F /* Yoga.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246196842526EC97006ADE0F /* Base */,
+			);
+			name = Yoga.storyboard;
+			sourceTree = "<group>";
+		};
+		246196872526ECA6006ADE0F /* Chats.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246196882526ECA6006ADE0F /* Base */,
+			);
+			name = Chats.storyboard;
+			sourceTree = "<group>";
+		};
+		2461968B2526ECB8006ADE0F /* Articles.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2461968C2526ECB8006ADE0F /* Base */,
+			);
+			name = Articles.storyboard;
+			sourceTree = "<group>";
+		};
+		2461968F2526ECCB006ADE0F /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246196902526ECCB006ADE0F /* Base */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		246196632526E9C9006ADE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		246196642526E9C9006ADE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		246196662526E9C9006ADE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCS6WTJXPB;
+				INFOPLIST_FILE = YogaExplore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = multipz.YogaExplore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		246196672526E9C9006ADE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCS6WTJXPB;
+				INFOPLIST_FILE = YogaExplore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = multipz.YogaExplore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		246196492526E9C7006ADE0F /* Build configuration list for PBXProject "YogaExplore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246196632526E9C9006ADE0F /* Debug */,
+				246196642526E9C9006ADE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246196652526E9C9006ADE0F /* Build configuration list for PBXNativeTarget "YogaExplore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246196662526E9C9006ADE0F /* Debug */,
+				246196672526E9C9006ADE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2461965A2526E9C7006ADE0F /* YogaExplore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2461965B2526E9C7006ADE0F /* YogaExplore.xcdatamodel */,
+			);
+			currentVersion = 2461965B2526E9C7006ADE0F /* YogaExplore.xcdatamodel */;
+			path = YogaExplore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 246196462526E9C7006ADE0F /* Project object */;
+}
